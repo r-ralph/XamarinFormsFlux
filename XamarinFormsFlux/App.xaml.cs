@@ -1,13 +1,16 @@
-﻿using Xamarin.Forms;
+﻿using Microsoft.Practices.Unity;
+using Xamarin.Forms;
+using XamarinFormsFlux.Ui;
 
 namespace XamarinFormsFlux
 {
 	public partial class App : Application
 	{
+		public UnityContainer container;
+
 		public App()
 		{
 			InitializeComponent();
-
 			MainPage = new MainPage();
 		}
 
